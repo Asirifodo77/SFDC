@@ -1,0 +1,26 @@
+{
+  "CRM" : {
+    "crm:CRM" : {
+      "crm:Customer" : [ {
+          "cus:MemberInfo" : {
+            "cus:SourceSystem" : "Portal"
+          }
+        }
+      ],
+      "crm:MemberCard" : [ {
+          "mc:CardInfo" : {
+            "mc:CardNo" : "520001000303"
+          }
+        }
+      ],
+      "crm:loyaltyService" : {
+        "lts:common" : {
+          "lts:POS" : {
+            "pos:OutletCode" : "70-207",
+            "pos:CashierID" : "0"
+          }
+        }
+      }
+    }
+  }
+}

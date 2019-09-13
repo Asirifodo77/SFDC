@@ -1,0 +1,43 @@
+{
+  "CRM" : {
+  "crm:CRM" : {
+    "crm:Customer" : [ {
+      "cus:MemberInfo" : {
+        "cus:TitleCode" : "Mr.",
+        "cus:GenderCode" : "M",
+        "cus:EmailAddressText" : "testautomation@gmail.com",
+        "cus:ContactNumberText" : "86707924",
+        "cus:CardPickupMethod":"In Store",
+        "cus:Mobile1AreaCode" : "65",
+        "cus:CardTier":"LOYAL T",
+        "cus:IsContactable":"1",
+        "cus:FirstNameNative" : "Test Automation",
+        "cus:FirstName":"TestAutomationPOS",
+        "cus:LastName" : "DoNotUse",
+        "cus:CountryNameText" : "Singapore",
+        "cus:RegistrationDivisionCode" : "58",
+        "cus:RegistrationLocationID" : "451",
+        "cus:SpokenLanguage" : "English",
+        "cus:SourceSystem" : "POS",
+        "cus:AgeRange" : "Below 20",
+        "cus:CreationUserID" : "Admin",
+        "cus:CustomerRegistrationDatetime" : "2015-09-28T00:00:00"
+      }
+    }
+    ],
+    "crm:MemberCard" : [ {
+      "mc:CardInfo" : {
+        "mc:CardNo" : "520000561228"
+      }
+    } ],
+    "crm:loyaltyService" : {
+      "lts:common" : {
+        "lts:POS" : {
+          "pos:OutletCode" : "0",
+          "pos:CashierID" : "Cashier001"
+        }
+      }
+    }
+  }
+}
+}

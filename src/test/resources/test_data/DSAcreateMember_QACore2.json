@@ -1,0 +1,86 @@
+{
+  "CRM": {
+    "crm:CRM": {
+      "crm:Customer": [
+        {
+          "cus:MemberInfo": {
+            "cus:TitleCode": "Mr.",
+            "cus:GenderCode": "M",
+            "cus:EmailAddressText": "testautomation@gmail.com",
+            "cus:PostalCode": "A2346Z",
+            "cus:CityNameText": "Chongqing",
+            "cus:CountryNameText": "China",
+            "cus:ContactNumberText": "8965379",
+            "cus:IsInvalidAddress": "0",
+            "cus:IsInvalidEmail": "0",
+            "cus:IsEmptyEmail": "0",
+            "cus:EmailUnwillingToProvide": "1",
+            "cus:FirstName": "TestAutomationDSA",
+            "cus:FirstNameNative": "这咏",
+            "cus:LastName": "CodeCleanup",
+            "cus:LastNameNative": "王",
+            "cus:BirthDate": "01",
+            "cus:BirthMonth": "10",
+            "cus:RegistrationDivisionCode": "58",
+            "cus:RegistrationLocationID": "451",
+            "cus:MailingAddress2": "荃加城12A",
+            "cus:ZipCode": "A2346Z",
+            "cus:CorrCityNameText": "",
+            "cus:CorrStateNameText": "",
+            "cus:MailingAddress1": "A2346Z 中国重庆重庆",
+            "cus:MailingAddress3": "地里街十八号",
+            "cus:ResCityNameText": "Chongqing",
+            "cus:ResStateNameText": "Chongqing",
+            "cus:EnglishCountry": "China",
+            "cus:ValidMobileNo1": "1",
+            "cus:SpokenLanguage": "Simplified Chinese",
+            "cus:IsContactable": "0",
+            "cus:CustomerRegistrationDatetime": "2018-09-28 09:57:39.000",
+            "cus:CustomerLeisureActivity": "",
+            "cus:CustomerShoppingPreference": "",
+            "cus:CustomerPreferredBrands": "",
+            "cus:LeisureActivitiesMultiple": "Art & Culture|Sports",
+            "cus:ShoppingPreferencesMultiple": "Beauty|Watches",
+            "cus:PreferredBrandsMultiple": "1003|1009|1105",
+            "cus:AgeRange": "35-39",
+            "cus:MarketingSource": "Facebook",
+            "cus:ZipCodeValidFlag": "1",
+            "cus:CardTier": "PRESTIGE RUBY",
+            "cus:CardPickupMethod": "By mail",
+            "cus:IpadID": "AHKGISUN999",
+            "cus:StaffID": "5432177",
+            "cus:MarketingSourceOthers": "",
+            "cus:Mobile1AreaCode": "1268",
+            "cus:CreationDate": "2018-09-28T13:43:39",
+            "cus:UpdateDate": "2018-09-28T13:43:39",
+            "cus:CreationUserID": "5432199",
+            "cus:UpdateUserID": "5432188",
+            "cus:SourceSystem": "DSA",
+            "cus:Override": "true",
+            "cus:ContactDetails": [
+              {
+                "cus:ContactType": "WeChat",
+                "cus:ContactDetail": "testautomation@gmail.com"
+              }
+            ]
+          }
+        }
+      ],
+      "crm:MemberCard": [
+        {
+          "mc:CardInfo": {
+            "mc:CardNo": "520001000260"
+          }
+        }
+      ],
+      "crm:loyaltyService": {
+        "lts:common": {
+          "lts:POS": {
+            "pos:OutletCode": "0",
+            "pos:CashierID": "0"
+          }
+        }
+      }
+    }
+  }
+}

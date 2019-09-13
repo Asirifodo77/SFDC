@@ -1,0 +1,48 @@
+{
+  "CRM" : {
+    "crm:CRM" : {
+      "crm:Customer" : [ {
+        "cus:MemberInfo" : {
+          "cus:TitleCode" : "Miss",
+          "cus:GenderCode" : "F",
+          "cus:EmailAddressText" : "testautomation@gmail.com",
+          "cus:ContactNumberText" : "9789034311",
+          "cus:IsInvalidEmail" : "0",
+          "cus:IsEmptyEmail" : "0",
+          "cus:FirstName" : "TestAutomationETRUpdate",
+          "cus:LastName" : "DoNotUse",
+          "cus:NativeSalutation" : "小姐",
+          "cus:Mobile1AreaCode" : "91",
+          "cus:ValidMobileNo1" : "1",
+          "cus:EnglishCountry" : "Singapore",
+          "cus:SpokenLanguage" : "English",
+          "cus:IsContactable" : "1",
+          "cus:CardTier" : "LOYAL T",
+          "cus:CardPickupMethod" : "In Store",
+          "cus:SourceSystem" : "eTR",
+          "cus:Override" : "true",
+          "cus:RegistrationDivisionCode" : "58",
+          "cus:RegistrationLocationID" : "451",
+          "cus:CustomerRegistrationDatetime" : "2018-08-07 14:17:12.820",
+          "cus:AgeRange" : "55-59"
+        }
+      }
+      ],
+      "crm:MemberCard" : [ {
+        "mc:CardInfo" : {
+          "mc:CardNo" : "520001000262",
+          "mc:MembershipCardTypeCode" : "101"
+        }
+      }
+      ],
+      "crm:loyaltyService" : {
+        "lts:common" : {
+          "lts:POS" : {
+            "pos:OutletCode" : "0",
+            "pos:CashierID" : "0"
+          }
+        }
+      }
+    }
+  }
+}

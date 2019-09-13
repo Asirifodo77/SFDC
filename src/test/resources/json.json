@@ -1,0 +1,49 @@
+{ "CRM":{
+        "crm:CRM":{
+            "crm:Customer":[
+                {
+                    "cus:MemberInfo":{
+                        "cus:TitleCode":"Miss",
+                        "cus:GenderCode":"F",
+                        "cus:EmailAddressText":"anu536@yopmail.com",
+                        "cus:ContactNumberText":"9500005365",
+                        "cus:IsInvalidEmail":"0",
+                        "cus:IsEmptyEmail":"0",
+                        "cus:FirstName":"Automation",
+                        "cus:LastName":"DemoTest",
+                        "cus:NativeSalutation":"小姐",
+                        "cus:Mobile1AreaCode":"91",
+                        "cus:ValidMobileNo1":"1",
+                        "cus:EnglishCountry":"Guam",
+                        "cus:SpokenLanguage":"English",
+                        "cus:IsContactable":"1",
+                        "cus:CardTier":"LOYAL T",
+                        "cus:CardPickupMethod":"By Mail",
+                        "cus:SourceSystem":"eTR",
+                        "cus:Override":"true",
+                        "cus:RegistrationDivisionCode":"58",
+                        "cus:RegistrationLocationID":"451",
+                        "cus:CustomerRegistrationDatetime":"2018-09-27 18:38:00.820",
+                        "cus:AgeRange":"20-24"
+                    }
+                }
+            ],
+            "crm:MemberCard":[
+                {
+                    "mc:CardInfo":{
+                        "mc:CardNo":"520000561214",
+                        "mc:MembershipCardTypeCode":"101"
+                    }
+                }
+            ],
+            "crm:loyaltyService":{
+                "lts:common":{
+                    "lts:POS":{
+                        "pos:OutletCode":"0",
+                        "pos:CashierID":"0"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{"Members":
+[
+  {
+    "FileRef" : "CCBA_DFS_ENR_UP_2018_12_17",
+    "TransactionDate" : "2018-12-17",
+    "TransactionRef" : "123456789",
+    "EnrollmentAction" : "A",
+    "Salutation" : "Mr.",
+    "FirstName" : "SFDC_automation_fname12_17_1",
+    "LastName" : "SFDC_automation_lname12_17_1",
+    "MobilePhone" : "1234567999",
+    "Email" : "sfdcautomation@email.com",
+    "MailingAddressLine1" : "MailingAddressLine1",
+    "MailingAddressLine2" : "MailingAddressLine3",
+    "MailingAddressLine3" : "MailingAddressLine3",
+    "MailingCountry" : "Hong Kong",
+    "PostalCode" : "11111",
+    "Gender" : "Male",
+    "AgeRange" : "40-44",
+    "BirthMonth" : "8",
+    "PreferredLanguage" : "English",
+    "CustomerEnrolmentSource" : "HK-CCBA",
+    "MembershipCardNumber" : "",
+    "CardType" : "HKMCWORLDLTD",
+    "CardStatus" : "non cancel",
+    "ReferralCode" : "000000000000000001",
+    "BankApplicationId" : "12345678",
+    "CountryCodeMobilePhone" : "86",
+    "EnrollmentLocation" : "4",
+
+    "CardApplicationRef":"123"
+  }
+]}

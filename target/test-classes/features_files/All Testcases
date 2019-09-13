@@ -1,0 +1,197 @@
+Feature: Create Member Using API - ETR
+  @Senario_Validate_Member_Create_ETR
+  Scenario: Validate Created Member In Sales Force and Matrix
+
+    Given I Send POST Request and Receive Response
+    Given I login to SFDC
+
+    And I search for the member through Card Number
+      | <Card_Number>|
+      | API_ETR_Create_Member_Card_Number  |
+    And I read the Profile Information from Sales force UI
+    And Read Json file
+    And I query
+    And I Validate Request Payload with Member Profile Information
+#    And I Validate Request Payload with Matrix
+
+Feature: Existing Customer Auto Upgrade From 3 Tiers
+  @Senario_ATP_Existing_Customer_Auto_Upgrade_From_3_Tiers
+  Scenario: Validation of Existing Customer Auto Upgrade From 3 Tiers
+    Given I login to SFDC
+    When I create a new member in SFDC
+      | <MemberNumber> | <SalutationEnglish> | <FirstName> | <LastName> | <Email> | <Residence> | <PreferredLanguage> |  <OptInForMarketingCommunication> | <Tier> | <CardPickupMethod> | <EnrollmentLocation> | <StaffNo> |
+      | ATP_Auto_Upgrade_Card_Number  | Saluation_English | First_name  | Last_name  | Email   |  Residence  | Preferred_Language   | Opt_In_For_Marketing | Tier | Card_Pick_up_Method | Enrollment_Location | Staff_No|
+    And I Login to workbench to perform Auto Transaction posting
+      | <Notification> | <Card_Number> | <TotalRecords> | <ATPStartTimestamp> | <ATPEndTimestamp> |
+      | POST  | ATP_Auto_Upgrade_Card_Number | ATP_Auto_Upgrade_TotalRecords1  | ATP_Auto_Upgrade_Start_timestamp1 | ATP_Auto_Upgrade_End_timestamp1 |
+    And I validate the success message
+    And I Validate main Table
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    When I login to SFDC
+    And I search for the member through Card Number
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    And I read the membership Information and Purchase history details from UI
+    And I validate point calculations with Matrix
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    And I validate Membership Information with matrixDB
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    And I Login to workbench to perform Auto Transaction posting
+      | <Notification> | <Card_Number> | <TotalRecords> | <ATPStartTimestamp> | <ATPEndTimestamp> |
+      | POST  |  ATP_Auto_Upgrade_Card_Number | ATP_Auto_Upgrade_TotalRecords2  | ATP_Auto_Upgrade_Start_timestamp2 | ATP_Auto_Upgrade_End_timestamp2 |
+    And I validate the success message
+    And I Validate main Table
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    When I login to SFDC
+    And I search for the member through Card Number
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    And I read the membership Information and Purchase history details from UI
+    And I validate point calculations with Matrix
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    And I validate Membership Information with matrixDB
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    And I Login to workbench to perform Auto Transaction posting
+      | <Notification> | <Card_Number>| <TotalRecords> | <ATPStartTimestamp> | <ATPEndTimestamp> |
+      | POST  | ATP_Auto_Upgrade_Card_Number | ATP_Auto_Upgrade_TotalRecords3  | ATP_Auto_Upgrade_Start_timestamp3 | ATP_Auto_Upgrade_End_timestamp3 |
+    And I validate the success message
+    And I Validate main Table
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    When I login to SFDC
+    And I search for the member through Card Number
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    And I read the membership Information and Purchase history details from UI
+    And I validate point calculations with Matrix
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    And I validate Membership Information with matrixDB
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    And I Login to workbench to perform Auto Transaction posting
+      | <Notification> | <Card_Number>| <TotalRecords> | <ATPStartTimestamp> | <ATPEndTimestamp> |
+      | POST  | ATP_Auto_Upgrade_Card_Number | ATP_Auto_Upgrade_TotalRecords4  | ATP_Auto_Upgrade_Start_timestamp4 | ATP_Auto_Upgrade_End_timestamp4 |
+    And I validate the success message
+    And I Validate main Table
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    When I login to SFDC
+    And I search for the member through Card Number
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    And I read the membership Information and Purchase history details from UI
+    And I validate point calculations with Matrix
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+    And I validate Membership Information with matrixDB
+      | <Card_Number> |
+      | ATP_Auto_Upgrade_Card_Number  |
+
+Feature: New Customer Sale - Member created in Salesforce
+  @Senario_Create_new_member_in_SF_and_associate_transaction_through_ATP
+  Scenario: Validation of member created in SF and validating ATP
+    Given I login to SFDC
+    When I create a new member in SFDC
+      | <MemberNumber> | <SalutationEnglish> | <FirstName> | <LastName> | <Email> | <Residence> | <PreferredLanguage> |  <OptInForMarketingCommunication> | <Tier> | <CardPickupMethod> | <EnrollmentLocation> | <StaffNo> |
+      | ATP_New_Customer_Sale_Member_Number  | Saluation_English | First_name  | Last_name  | Email   |  Residence  | Preferred_Language   | Opt_In_For_Marketing | Tier | Card_Pick_up_Method | Enrollment_Location | Staff_No|
+    And I Login to workbench to perform Auto Transaction posting
+      | <Notification> | <Card_Number> | <TotalRecords> | <ATPStartTimestamp> | <ATPEndTimestamp> |
+      | POST  | ATP_New_Customer_Sale_Member_Number | ATP_TotalRecords  | ATP_Start_timestamp | ATP_End_timestamp |
+    And I validate the success message
+    And I Validate main Table
+      | <Card_Number> |
+      | ATP_New_Customer_Sale_Member_Number  |
+
+
+  @Senario_Create_new_member_in_SF_and_associate_transaction_through_ATP
+  #Background: Browser is being set up
+    #Given browser is initiated
+  Scenario: Validation of created member in SF  and Matrix DB
+    Given I Validate main Table
+      | <Card_Number> |
+      | ATP_New_Customer_Sale_Member_Number  |
+    And I login to SFDC
+    And I search for the member through Card Number
+      | <Card_Number> |
+      | ATP_New_Customer_Sale_Member_Number  |
+    And I read the membership Information and Purchase history details from UI
+    And I validate point calculations with Matrix
+      | <Card_Number> |
+      | ATP_New_Customer_Sale_Member_Number  |
+    And I validate Membership Information with matrixDB
+      | <Card_Number> |
+      | ATP_New_Customer_Sale_Member_Number  |
+
+  @Senario_Validate_Dummy_Member_in_Sales_Force
+  Feature: Validate Dummy Member in Sales Force
+
+  Scenario: Valiadation of member
+#    Given Login to workbench and post Notification
+#    And validate the success message
+
+    Given I login to SFDC
+
+    And I search for the member through Card Number
+      | <Card_Number>|
+      | Dummy_Card_Number  |
+    And I read the membership Information and Purchase history details from UI
+    And I validate point calculations with Matrix
+      | <Card_Number>|
+      | Dummy_Card_Number  |
+    And I validate Membership Information with matrixDB
+      | <Card_Number>|
+      | Dummy_Card_Number  |
+
+
+
+Feature: New Customer Sale - Member created in Salesforce
+  @Senario_ATP_Refund
+  Scenario: Validation of member created in SF and validating ATP
+    Given I login to SFDC
+    When I create a new member in SFDC
+      | <MemberNumber> | <SalutationEnglish> | <FirstName> | <LastName> | <Email> | <Residence> | <PreferredLanguage> |  <OptInForMarketingCommunication> | <Tier> | <CardPickupMethod> | <EnrollmentLocation> | <StaffNo> |
+      | Refund_New_Customer_Sale_Member_Number  | Saluation_English | First_name  | Last_name  | Email   |  Residence  | Preferred_Language   | Opt_In_For_Marketing | Tier | Card_Pick_up_Method | Enrollment_Location | Staff_No|
+    And I Login to workbench to perform Auto Transaction posting
+      | <Notification> |<Card_Number> | <TotalRecords> | <ATPStartTimestamp> | <ATPEndTimestamp> |
+      | POST  |  Refund_New_Customer_Sale_Member_Number  | Refund_TotalRecords1  | Refund_Start_timestamp1 | Refund_End_timestamp1 |
+    And I validate the success message
+    And I Validate main Table
+      | <Card_Number> |
+      | Refund_New_Customer_Sale_Member_Number  |
+    When I login to SFDC
+    And I search for the member through Card Number
+      | <Card_Number> |
+      | Refund_New_Customer_Sale_Member_Number  |
+    And I read the membership Information and Purchase history details from UI
+    And I validate point calculations with Matrix
+      | <Card_Number> |
+      | Refund_New_Customer_Sale_Member_Number  |
+    And I validate Membership Information with matrixDB
+      | <Card_Number> |
+      | Refund_New_Customer_Sale_Member_Number  |
+    And I Login to workbench to perform Auto Transaction posting
+      | <Notification> | <Card_Number> |<TotalRecords> | <ATPStartTimestamp> | <ATPEndTimestamp> |
+      | Refund  | Refund_New_Customer_Sale_Member_Number  | Refund_TotalRecords2  | Refund_Start_timestamp2 | Refund_End_timestamp2 |
+    And I validate the success message
+    And I Validate main Table
+      | <Card_Number> |
+      | Refund_New_Customer_Sale_Member_Number  |
+    When I login to SFDC
+    And I search for the member through Card Number
+      | <Card_Number> |
+      | Refund_New_Customer_Sale_Member_Number  |
+    And I read the membership Information and Purchase history details from UI
+    And I validate point calculations with Matrix
+      | <Card_Number> |
+      | Refund_New_Customer_Sale_Member_Number  |
+    And I validate Membership Information with matrixDB
+      | <Card_Number> |
+      | Refund_New_Customer_Sale_Member_Number  |
+

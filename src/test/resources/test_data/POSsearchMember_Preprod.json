@@ -1,0 +1,55 @@
+{"CRM" : {
+  "crm:CRM" : {
+  "crm:Customer" : [ {
+    "cus:MemberInfo" : {
+      "cus:MemberID" : "",
+      "cus:EmailAddressText" : "",
+      "cus:NationalityCode" : "",
+      "cus:ContactNumberText" : "",
+      "cus:FirstName" : "",
+      "cus:LastName" : "",
+      "cus:RegistrationDivisionCode" : "",
+      "cus:NRIC" : "",
+      "cus:Passport" : "",
+      "cus:ContactDetails" : [
+        {
+          "cus:ContactType" : "WeChat",
+          "cus:ContactDetail" : "weChatID"
+        }
+      ]
+
+    }
+  } ],
+  "crm:MemberCard" : [ {
+    "mc:CardInfo" : {
+      "mc:CardNo" : "520000561260"
+    }
+  } ],
+  "crm:loyaltyService" : {
+    "lts:request" : {
+      "lts:Command" : "DFS MEMBER ENQUIRY",
+      "lts:DB" : "DFS",
+      "lts:EnquiryCode" : "CRM",
+      "lts:RequestDynamicFieldLists" : {
+        "lts:DynamicField" : [ {
+          "@Name" : "AdditionalInfo"
+        } ]
+      },
+      "lts:RequestDynamicColumnLists" : {
+        "lts:DynamicColumn" : [ {
+          "@Name" : "ColumnName"
+        } ]
+      }
+    },
+    "lts:common" : {
+      "lts:TransactionType" : "GenericVO.DFSMemberEnquiry",
+      "lts:POS" : {
+        "pos:OutletCode" : "70-207",
+        "pos:PosID" : "PWHKGP2105",
+        "pos:CashierID" : "183369"
+      }
+    }
+  }
+}
+}
+}
