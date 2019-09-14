@@ -1,0 +1,67 @@
+@FindBy(how= How.XPATH, using = "//*[contains(text(),'Transaction Association')]/ancestor::ul/li[5]/div/div[2]/div/ul")
+    public WebElement cardManagementMAIN_link;
+
+@FindBy(how= How.XPATH, using = "//label[@class='iconPointer active-action-label' and text()='Cancel']")
+    public WebElement cancel_Link;
+
+    @FindBy(how= How.XPATH, using = "//*[contains(text(),'Card')]/ancestor::label/../select")
+    public WebElement cancelCard_dropdown;
+
+    @FindBy(how= How.XPATH, using = "//*[contains(text(),'Reason')]/ancestor::label/../select")
+    public WebElement cancelCardReason_dropdown;
+
+    @FindBy(how= How.XPATH, using = "//button[@class='slds-button slds-button_brand' and text()='Next']")
+    public WebElement next_Button;
+//div[@class='title_wrapper']
+@FindBy(how= How.XPATH, using = "//*[contains(text(),'Membership Card')]")
+    public WebElement membershipCard_Tab;
+
+//*[contains(text(),'Suspend Card Request')]
+test-id__field-value slds-form-element__static slds-grow  is-read-only
+
+
+//span[@class='test-id__field-value slds-form-element__static slds-grow  is-read-only']/span/img
+
+//li[@class='js_nav_item' and text()='Movies, TV ' ]
+
+slds-form-element__control slds-p-right_small
+requiredInput fixed-element-control select uiInput uiInputSelect uiInput--default uiInput--select
+//div[@class='slds-form-element__control slds-p-right_small']//select[@class='requiredInput fixed-element-control select uiInput uiInputSelect uiInput--default uiInput--select']
+
+slds-form-element__control slds-m-left_small slds-p-right_small
+requiredInput fixed-element-control select uiInput uiInputSelect uiInput--default uiInput--select
+//div[@class='slds-form-element__control slds-m-left_small slds-p-right_small']//select[@class='requiredInput fixed-element-control select uiInput uiInputSelect uiInput--default uiInput--select']
+
+toastContainer slds-notify_container slds-is-relative
+slds-theme--success slds-notify--toast slds-notify slds-notify--toast forceToastMessage
+//div[@class='toastContainer slds-notify_container slds-is-relative']//div[@class='slds-theme--success slds-notify--toast slds-notify slds-notify--toast forceToastMessage']
+
+//toastTitle slds-text-heading--small
+slds-align-middle slds-hyphenate
+toastMessage forceActionsText
+//div[@class='toastTitle slds-text-heading--small']//span[@class='toastMessage forceActionsText']
+
+tabs__item uiTabItem
+title
+//li[@class='tabs__item uiTabItem']//span[@class='title']
+
+
+//div[@class='']
+//div[@class='sdgdatatablewrapper']//table[@class='slds-table slds-table_bordered slds-no-row-hover slds-table_cell-buffer ']
+
+//section[@class='tabs__content active uiTab']
+
+
+tabset slds-tabs_card uiTabset--base uiTabset--default uiTabset--dense uiTabset flexipageTabset
+tabs__content active uiTab
+//div[@class='']//section[@class='']
+
+//label[@class='iconPointer active-action-label']
+//div[@class='slds-size_1-of-1 slds-align_absolute-center slds-p-around_small slds-text-heading_small']
+
+uiInput uiInputSelect uiInput--default uiInput--select
+form-select select
+//div[@class='']//select[@class='']
+
+form-select select
+//div[@class='list-group']//a[@class='list-group-item create-account ']
